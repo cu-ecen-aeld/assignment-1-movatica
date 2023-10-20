@@ -14,9 +14,9 @@
 */
 void test_validate_my_username()
 {
-    char* my_un = my_username();
+    const char* my_un = my_username();
 
-    char* un_conf = malloc_username_from_conf_file();
+    const char* un_conf = malloc_username_from_conf_file();
 
     TEST_ASSERT_EQUAL_STRING_MESSAGE(my_un, un_conf, "Ensure correct assignment setup");
 }
